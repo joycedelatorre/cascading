@@ -1,0 +1,9 @@
+import cv2
+
+cam = cv2.VideoCapture(0)
+s, im = cam.read()
+
+cv2.imshow("Test Picture", im)
+cv2.waitKey()
+
+cv2.imwrite("test.bmp",im)
